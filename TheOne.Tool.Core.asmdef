@@ -1,0 +1,28 @@
+{
+  "name": "TheOne.Tool.Core",
+  "rootNamespace": "TheOne.Tool.Core",
+  "references": [
+    "TheOne.Extensions",
+    "GameFoundation.Models",
+    "3rd.Configs",
+    "Unity.Addressables.Editor",
+    "UITemplate.Scripts",
+    "3rdCore.Analytic",
+    "UniTask",
+    "GameFoundation.DI",
+    "MaxSdk.Scripts.IntegrationManager.Editor",
+    "MaxSdk.Scripts",
+    "UITemplate.Config"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
