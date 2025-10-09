@@ -1,4 +1,4 @@
-# UITemplate Editor Core
+# TheOne Template Editor
 
 **Core editor tools and configuration window for TheOne UITemplate**
 
@@ -8,14 +8,16 @@
 
 ## Overview
 
-UITemplate Editor Core provides the foundational editor infrastructure for TheOne UITemplate framework. It includes centralized configuration management, asset utilities, and integration points for all UITemplate features.
+This package provides the central configuration hub for all UITemplate features through the `TheOne/Configuration And Tools` menu item. It serves as the main entry point for project setup, feature configuration, and tool access.
 
 ## Features
 
-- **TheOneGDKWindow**: Centralized configuration and tools window
-- **AssetSearcher**: Powerful asset search and management utilities
-- **Configuration Management**: Project-wide settings and preferences
-- **Integration Ready**: Seamless integration with UITemplate features
+- **Centralized Configuration Window**: Single location for all UITemplate settings
+- **Feature Toggle Management**: Enable/disable UITemplate features
+- **SDK Integration**: Configure third-party SDKs (ads, analytics, etc.)
+- **Tool Integration**: Quick access to all UITemplate editor tools
+- **Project Validation**: Verify correct project setup
+- **Asset Searcher**: Powerful utility for finding and managing assets in your project
 
 ## Requirements
 
@@ -58,8 +60,40 @@ Add to your `Packages/manifest.json`:
 
 ## Usage
 
-Access the main configuration window via:
+### Opening the Configuration Window
+
 **Menu**: `TheOne → Configuration And Tools`
+
+### Main Features
+
+#### TheOneGDKWindow
+
+The main configuration window provides:
+- Project settings management
+- Feature toggles for UITemplate modules
+- SDK configuration for third-party integrations
+- Quick access to optimization and utility tools
+
+#### AssetSearcher
+
+Utility class for finding and managing assets:
+
+```csharp
+using TheOne.Tool.Core;
+
+// Example usage
+var assets = AssetSearcher.FindAssets<GameObject>("t:GameObject");
+```
+
+## API Reference
+
+### TheOneGDKWindow
+
+Main configuration window accessible via Unity menu.
+
+### AssetSearcher
+
+Static utility class for asset management operations.
 
 ## License
 
@@ -76,7 +110,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [UITemplate](https://github.com/The1Studio/UITemplate) - Complete Unity UI framework
 - [Unity Optimization Tools](https://github.com/The1Studio/UnityOptimizationTools) - Project optimization toolkit
-- [TheOne Features](https://upm.the1studio.org) - Modular feature packages
+- [TheOne LocalData](https://github.com/The1Studio/UITemplateLocalData) - Local data management
+- [TheOne Localization](https://github.com/The1Studio/UITemplateLocalization) - Localization tools
+- [TheOne Project Migration](https://github.com/The1Studio/UITemplateProjectMigration) - Auto-migration system
 
 ## Support
 
